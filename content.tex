@@ -1,8 +1,132 @@
 %!TEX root = ./main.tex
 
-\section[Short chapter title]{Long chapter title for document and TOC}
-\subsection[Short section title]{Long section title for document and TOC}
-\lipsum
-\section{A chapter}
-\subsection{A section}
-\lipsum
+\section{Einleitung}
+
+Der Erfolg von Software Projekten hängt häufig stärker von der Qualität und dem Ausmaß der definierten Anforderungen, als von der qualitativen Umsetzung dieser ab. Ein Projekt hat mehr Teilhabende als Nutzer und ein Entwicklungsteam. Es sollte stets auch die Instandhaltung bei der Entwicklung des Systems Beachtung finden. Manchmal ist die das System bedienende nicht die durch das System begünstigte Person, zum Beispiel im Falle eines medizinischen Gerätes wie einem Stethoskop.
+
+Stakeholder werden als "Gruppe oder Individuum, das vom Erfolg des Zieles der Organisation oder des Projektes abhängt" definiert \cite{sharp}.
+Stakeholder stehen in verschiedenen Beziehungen zueinander. Sie tauschen Informationen, Produkte oder Anweisungen aus. Das Wissen darüber welche Beziehungen existieren kann genutzt werden, um die Kollaboration zu fördern, indem positive Beziehungen gestärkt und konfliktäre verbessert werden
+\cite{mcmanus}.
+Nicht jeder Stakeholder ist gleich wichtig für das Projekt. Während die Interessen eines Entwicklers nicht zu vernachlässigen sind, stehen sie jedoch in jedem Fall den Anforderungen einer betroffenen regulierenden Behörde hintenan.
+Methoden zur Stakeholder-Identifikation sollten in Betracht gezogen werden, damit all diese Faktoren systematisch respektiert werden.
+
+Es existiert bereits eine Vielzahl solcher Methoden \cite{sharp, mcmanus, stakenet, lauesen, alexander}. Kelanti und Saukkonen haben einen experimentellen Vergleich dreier Methoden \cite{sharp, mcmanus, lauesen} angestellt, indem sie Studierende diese auf einen Fall haben anwenden lassen. Die Ergebnisse der Identifikation wurden unter
+Anbetracht des Vorwissens der einzelnen Studierenden verglichen. In dieser Arbeit soll stattdessen ein theoretischer Vergleich durchgeführt werden. Um diesen systematisch zu gestalten, sollten mehrere Dimensionen definiert werden, anhand deren die einzelnen Methoden charakterisiert werden können.
+
+Die \textit{Effizienz} einer Methode ist die Invertierung der Höhe der zeitlichen (und damit monetären) Kosten einer Methode. Der \textit{Umfang} einer Methode ist das Ausmaß ihrer Untersuchung und könnte quantifizert werden durch die erwartete Anzahl unterschiedlicher Stakeholder-Rollen, die sie in der Lage ist zu erkennen. Die \textit{Plausibilität} einer Methode hängt ab von ihrem zugrundeligenden Maß an Evidenz in Form einer vergangenen Erprobung an tätsächlichen Fällen und dem
+Grade, zu dem sie von gemessen Daten abhängt. Zuletzt soll die \textit{Effektivität} den erwarteten Nutzen, der aus dem Ergebnis der Methode geschlagen werden kann, repräsentieren. Für jede Methode wird des Weiteren abgeschätzt, auf Systeme welcher Nutzergröße sie anwendbar sein könnte.
+
+
+\section{Methoden zur Identifikation von Stakeholdern}
+
+Im Folgenden sollen der Reihe nach fünf Methoden vorgestellt und nach den genannten Kriterien charakterisiert werden.  
+
+\subsection{Fragenkatalog}
+
+McManus schlägt einen Satz an Fragen, der von der Weltbank entwickelt wurde, zur Identifikation von Stakeholdern vor \cite{mcmanus}:
+
+\begin{enumerate}
+  \item Wer könnte (positiv oder negativ) von dem Entwicklungsvorhaben betroffen sein?
+  \item Wer sind die `Stimmlosen', für die besondere Bemühungen nötig sind?
+  \item Wer sind die Vertreter derer, die wahrscheinlich betroffen sind?
+  \item Wer ist verantwortlich für das Vorgesehene?
+  \item Wer wird wahrscheinlich Mittel für oder gegen das Vorgesehene aufbringen?
+  \item Wer kann durch das Vorgesehene durch Teilnahme effektiver oder durch Nicht-Teilnahme (oder Opposition) uneffektiver machen?
+  \item Wer kann finanzielle und technische Mittel beisteuern?
+  \item Wessen Verhalten muss sich ändern, damit das Vorhaben erfolgreich ist?
+\end{enumerate}
+
+Dieser Ansatz identifiziert Stakeholder Rollen anhand ihrer Beziehung zum Endprodukt. Es wird keine Weiterverarbeitung der so gewonnenen Stakeholder beschrieben. Die Stakeholder sind über die Zugehörigkeit zur selben Frage gruppiert. Diese Fragen gehen nicht auf Beziehungen der Stakeholder zueinander ein. Die Fragen unterstehen keiner relativen Anordnung oder Gewichtung. Deswegen ist an der Effektivität der Methode zu zweifeln. Das Ergebnis ist eine Liste an potenziellen Stakeholdern, die dem Anforderungsingenieur als Antwort
+eingefallen sind. Die Antworten müssen nicht begründet sein, was der Plausibiltät der gewonnenen Antworten schadet. Die Methode wurde auch nicht anhand einer Fallstudie evaluiert. Die Methode ist einfach durchzuführen, jedoch in ihrem Umfang durch die Kreativität und die Projekteinsichten des Durchführenden beschränkt. Aus diesem Grund sollte sie nicht für Projekte mit mehr als 30 Stakeholdern verwendet werden. Sie kann dennoch helfen, Stakeholder zu identifizieren, an die intutitiv nicht gedacht wird, wie zum Beispiel dem Vorhaben unwohl Gesinnte (Frage 4 \& 5).
+
+\subsection{Definitionen}
+
+In einem ähnlichen Ansatz werden existierende Definitionen für mögliche Stakeholder verwendet. Einen solcher Satz an Definition findet sich zum Beispiel in der Arbeit von Lauesen \cite{lauesen, kelanti}:
+
+\begin{enumerate}
+  \item Der Sponsor, der für das Produkt bezahlt
+  \item Tägliche Nutzer aus verschiedenen Abteilungen
+  \item Manager dieser Abteilungen
+  \item Die Kunden der Firma / des Systems
+  \item Geschäftspartner (Lieferanten, Spedition etc.)
+  \item Behörden (Sicherheitsprüfer, Auditoren)
+  \item Entwickler und Support-Personal
+  \item Andere, die Ressourcen zur Verfügung stellen
+  \item Täglichen Nutzer des Systems auf Kundenseite
+  \item Manager und Sponsoren auf Kundenseite
+  \item IT-Personal auf Kundenseite
+  \item Händler, Weiterverwendende
+  \item Konkurrenten
+\end{enumerate}
+
+Die einzelnen Definitionen sind gekürzt dargestellt. Im Original wird jede einzelne dieser noch durch deren Erwartungen und einem Grund für ihre Relevanz beschrieben. Diese Methode ist sehr ähnlich wie die Vorherige zu bewerten. Die Zuweisung zu den Definitionen liefert eine einfache Liste an Antworten und hängt von den subjektiven Ansichten der Anforderungsingenieure ab. Dementsprechend niedrig ist auch hier die Plausibilität und erwartete Effektivität zu bewerten. Der Umfang der gefundenen Stakeholder könnte potenziell geringer sein, da mit diesen Definitionen Rollen, die in einen bestimmten Rahmen passen, gefragt sind.
+
+\subsection{Systematische Methode}
+
+Sharp und Finkelstein schlagen einen rekursiven Ansatz zum Aufdecken von Beziehungen vor \cite{sharp}. Begonnen wird dabei mit einer ``grundlegenden'' Stakeholder Gruppe. Zu dieser zählen die Nutzer, Entwickler, Behörden und Entscheidungtreffende. Die ``Nutzer''-Kategorie ist dabei sehr breit. Sie umfasst sowohl Leute, die Produkte oder Dienstleistungen von dem System erlangen und deren Manager, wie auch die, die das System testen, die Kaufentscheidungen fällen oder
+potenzielle Nutzer, die momentan konkurrierende Produkte nutzen.
+
+\begin{enumerate}
+  \item Identifizieren Sie alle Rollen in der grundlegenden Stakeholder Gruppe
+  \item Identifizieren Sie Zulieferer für jede grundlegende Rolle. Diese liefern Produkte, Informationen oder lösen unterstützende Aufgaben.
+  \item Identifizieren Sie Kunden für jede grundlegende Rolle. Diese empfangen Produkte, Informationen oder hängen von gelösten Aufgaben ab.
+  \item Identifizieren Sie `Satelliten'-Stakeholder für jede grundlegende Rolle. Diese interagieren in unterschiedlichen Weisen.
+  \item Wiederholen Sie rekursiv Schritte 1 bis 4 für jede Stakeholder Gruppe, die in Schritten 2 bis 4 identifiziert wurde bis keine neuen Stakeholder Gruppen mehr gefunden werden.
+\end{enumerate}
+
+Dieses Verfahren verspricht einen hören Umfang der identifizierten Rollen. Das rekursive Vorgehen lädt dazu ein, das System aus unterschiedlichen Gesichtspunkten zu betrachten und Beziehungen der Akteuere zueinander aufzudecken. Dies hängt jedoch hier ebenso von den Einsichten des durchführenden Teams ab. Die Methode wurde nicht empirisch evaluiert. Die Effektivität der Methode könnte darunter leiden, dass keine Einschätzung über die Relevanz der Stakeholder Rollen stattfindet.
+Der Aufwand der Methode ist nicht hoch aber höher einzuschätzen, als der der bisherigen Ansätze. In allem ist die Methode auf Systeme mit größerer Stakeholder Zahl anwendbar, soweit diese nicht weit über 100 liegt.
+
+\subsection{Soziale Netzwerke}
+
+Der eben beschriebene Ansatz kann auf empirische Weise durchgeführt werden, indem die Durchführenden nicht selbst eine Einschätzung über Beziehungen zwischen Stakeholdern abgeben, sondern die bis dato identifizierten Stakeholder persönlich nach Weiteren gefragt werden. Diese Gelegenheit kann des Weiteren genutzt werden, um eine Einschätzung im Bezug auf die Relevanz der empfohlenen Stakeholder zu erlangen. Dies ermöglicht die Konstruktion von gewichteten Graphen und damit
+fundierte Quantifizierungen der globalen Relevanz einzelner Stakeholder. Der von Suchmaschinen verwendete PageRank-Algorithmus wertet zum Beispiel Knoten, auf die häufig `verlinkt' wird sowie deren Verlinkungen (rekursiv) als relevanter. \cite{stakenet}
+
+\begin{figure*}[htp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{images/netzwerk.png}
+  %\hfill
+  \caption{Ein Beispielnetzwerk an Stakeholdern mit Gewichtungen. Entnommen aus \cite{stakenet}.}
+\end{figure*}
+
+Lim et al.\ haben die beschreibene `StakeNet'-Methode anhand eines Projekts mit 30.000 Nutzern evaluiert \cite{stakenet}. Die Methode ist daten-getrieben und damit in ihrer Plausibilität am höchsten einzuschätzen. Wo die systematische Methode von Sharp und Finkelstein \cite{sharp} potenziell auch unrelevante Stakeholder liefert, findet hier über die gesammelte und summierte Relevanz eine Priorisierung statt. Diese erhöht die erwartete Effektivität dieser Methode. Stakeholder werden so
+lange interviewt, bis keine neuen Gruppen mehr empfohlenen werden. Die Befragten haben eine bessere Einsicht in ihre Subnetzwerke als es Anforderungsingenieure von außen vermögen. Dementsprechend ist hier ebenso ein hoher Umfang zu erwarten. Vor allem die Telefonate stellen jedoch einen Schritt dar, der äußerst aufwendig erscheint. Dies stellt eine obere Hürde für die Zahl der Stakeholder dar, auf die diese Methode anwendbar scheint. Da genügend Empfehlungen existieren müssen, um
+aus dem sozialen Netzwerk sinnvoll und zuverlässige Informationen zu gewinnen, sollten jedoch auch genug Leute gefragt worden sein. Deswegen schätze ich die Anwendbarkeit dieser Methode auf eine Zahl von 50 bis 100 Stakeholdern.
+
+\subsection{Onion Maps}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/onion.png}
+  %\hfill
+  \caption{Die Struktur einer Onion Map. Entnommen aus \cite{alexander}.}
+\end{figure}
+
+Alexander definiert eine Methode, in der die Umwelt des Projektvorhabens in Kategorien ähnlich der Schichten einer Zwiebel unterteilt wird \cite{alexander}. In jedem dieser Bereiche sind typische Stakeholder-`Slots' definiert. Ein Slot kann von einer oder mehreren Stakeholder Rollen gefüllt werden. Jeder Slot hat eine bestimmte Beziehung zum Produkt.
+Der innerste Kern der Zwiebel ist das Produkt des Vorhabens und enthält damit als einziger Bereich keine Stakeholder, auch wenn das Produkt aus Teilen von Zulieferen produziert wird. Der das
+Produkt umfassende Bereich wird ``Unser System'' genannt. Zu diesem Bereich gehören die Stakeholder, die am engstem mit dem Produkt interagieren. Dazu zählen Bedienende, sowie Instandhaltende und der Support. Der nächste Bereich -- das ``beinhaltende System'' -- der ``unser System'' umfasst, enthält die aus dem Produkt Gewinn Schlagenden. Diese müssen nicht unbedingt das Produkt bedienen\footnote{z.B.\ Passagiere eines Zuges} oder menschlich
+sein\footnote{Es kann sich hier auch um ein System handeln, das die Ausgaben des Produktes weiterverwendet}. Im ``weiteren Umfeld'' finden sich die restlichen Stakeholder. Die Methode ist nicht auf diese Schichten beschränkt. In bestimmten Situtationen können weitere Schichten sinnvoll sein. Es wird hier nicht auf jede der definierten Rollen eingegangen. Jeder der Slots wird durch übliche Job-Beschreibungen beschrieben, hinsichtlich der Relevanz zum Projekt klassifiziert und mit
+üblichen Interaktionsvektoren versehen. 
+
+Es entsteht insgesamt eine räumlich übersichtliche Darstellung der Stakeholder und deren Beziehungen. Dies lässt an die Effektivität der Methode glauben. Die Methode arbeitet nicht basierend auf Stichproben oder Daten und ist dadurch schneller durchzuführen, aber auch weniger plausibel. Die ausführlichen Beschreibungen der einzelnen können jedoch zu einem angemessen Umfang im Ergebnis führen. Die räumliche Darstellungsart beschränkt die Größe der Projekte, auf die diese
+Methode anwendbar ist. Viele verschiedene Stakeholder-Rollen sind hier nicht mehr adäquat darzustellen, weswegen ein oberer Rahmen auf etwa 50 Stakeholdern geschätzt werden kann.
+
+\section{Zusammenfassung}
+
+\begin{table}[H]
+\centering
+\resizebox{0.9\textwidth}{!}{%
+\begin{tabular}{l|cccc|c}
+Methode                  & Effizienz                & Umfang                   & Plausibilität            & Effektivität             & Nutzergröße \\ \hline
+Fragebogen               & {\color[HTML]{3166FF} +} & {\color[HTML]{F8A102} o} & {\color[HTML]{FE0000} –} & {\color[HTML]{FE0000} –} & 1-30        \\
+Stakeholder Definitionen & {\color[HTML]{3531FF} +} & {\color[HTML]{FE0000} –} & {\color[HTML]{FE0000} –} & {\color[HTML]{FE0000} –} & 1-30        \\
+Systematische Methode    & {\color[HTML]{F8A102} o} & {\color[HTML]{3166FF} +} & {\color[HTML]{FE0000} –} & {\color[HTML]{F8A102} o} & 1-100       \\
+Soziale Netzwerke        & {\color[HTML]{FE0000} –} & {\color[HTML]{3166FF} +} & {\color[HTML]{3166FF} +} & {\color[HTML]{3166FF} +} & 50-100      \\
+Stakeholder Onion Maps   & {\color[HTML]{3166FF} +} & {\color[HTML]{F8A102} o} & {\color[HTML]{FE0000} –} & {\color[HTML]{3166FF} +} & 1-100      
+\end{tabular}%
+}
+\end{table}
+
+Jeder der Methoden hat Stärken wie Schwächen. Für Projekte ausreichender Größe und mit ausreichend Mitteln für die Identifikation zeigen sich die sozialen Netzwerke als Favorit.
+
+Diese Analyse basiert auf einer rein theoretisch und subjektiven Einschätzung und hat damit starke Einschränkungen. Die Analyse müsste durch empirische Versuche ähnlich zu \cite{kelanti} ergänzt werden. Es zeigt sich ein Mangel an Methoden, die basierend auf Erhebungen arbeiten. Der Großteil der Methoden wurde nicht empirisch evaluiert. Dies könnte einen potenziellen Bereich für die zukünftige Forschung im Bereich der Stakeholder-Identifikation darstellen.
